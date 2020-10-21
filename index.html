@@ -75,7 +75,6 @@
               document.querySelector("h1.row").innerHTML = "Dashboard";
               document.querySelector("main").innerHTML = res.data.myContent;
               callTimer();
-              console.log(Date.now());
             } else if (
               res &&
               res.data &&
@@ -120,7 +119,6 @@
       function callTimer() {
         setTimeout(function () {
           localStorage.clear();
-          console.log(Date.now());
           window.location.replace("http://localhost:3000/");
         }, 180000);
       }
